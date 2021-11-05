@@ -1,0 +1,93 @@
+.MainMenuHeader--MainMenuHeader--1T0Qd {
+  color: #fff;
+  width: 100%;
+  position: relative;
+  z-index: 204;
+}
+.MainMenuHeader--wrapper--2ZR4A {
+  position: relative;
+  max-width: 1280px;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  height: 82px;
+}
+[dir] .MainMenuHeader--wrapper--2ZR4A {
+  margin: 0 auto;
+}
+[dir="ltr"] .MainMenuHeader--wrapper--2ZR4A {
+  padding: 11px 11px 11px 6px;
+}
+[dir="rtl"] .MainMenuHeader--wrapper--2ZR4A {
+  padding: 11px 6px 11px 11px;
+}
+.MainMenuHeader--accessibilityLink--2yANH {
+  position: absolute;
+  top: -10000px;
+}
+[dir="ltr"] .MainMenuHeader--accessibilityLink--2yANH {
+  left: -10000px;
+}
+[dir="rtl"] .MainMenuHeader--accessibilityLink--2yANH {
+  right: -10000px;
+}
+.MainMenuHeader--accessibilityLink--2yANH:focus {
+  top: 80px;
+}
+[dir="ltr"] .MainMenuHeader--accessibilityLink--2yANH:focus {
+  left: 5px;
+}
+[dir="rtl"] .MainMenuHeader--accessibilityLink--2yANH:focus {
+  right: 5px;
+}
+.MainMenuHeader--ibmLogo--3mcYE {
+  display: flex;
+  flex-shrink: 0;
+  align-self: center;
+}
+[dir="ltr"] .MainMenuHeader--ibmLogo--3mcYE {
+  padding: 0 4px 0 12px;
+}
+[dir="rtl"] .MainMenuHeader--ibmLogo--3mcYE {
+  padding: 0 12px 0 4px;
+}
+.MainMenuHeader--cobranding--3f2qe,
+.MainMenuHeader--cobranding--3f2qe img {
+  max-height: 24px;
+}
+.MainMenuHeader--navigation--3Oi4O {
+  display: flex;
+  flex-shrink: 0;
+}
+.MainMenuHeader--navigation--3Oi4O > * {
+  display: flex;
+  align-items: center;
+}
+[dir] .MainMenuHeader--navigation--3Oi4O > * {
+  padding: 0 15px;
+}
+[dir="ltr"] .MainMenuHeader--navigation--3Oi4O > :first-child {
+  border-left: 0;
+}
+[dir="rtl"] .MainMenuHeader--navigation--3Oi4O > :first-child {
+  border-right: 0;
+}
+.MainMenuHeader--twcLogo--1oRKo {
+  width: 60px !important;
+  height: 60px !important;
+}
+.MainMenuHeader--wrapperLeft--3YkPC,
+.MainMenuHeader--wrapperRight--1doyc {
+  display: flex;
+  align-items: center;
+}
+[dir="ltr"] .MainMenuHeader--wrapperLeft--3YkPC {
+  padding-right: 30px;
+}
+[dir="rtl"] .MainMenuHeader--wrapperLeft--3YkPC {
+  padding-left: 30px;
+}
+.MainMenuHeader--wrapperRight--1doyc {
+  flex: 1 1 auto;
+}
