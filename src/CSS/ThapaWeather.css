@@ -11,7 +11,7 @@
 :root {
   --rad: 0.7rem;
   --dur: 0.3s;
-  --color-dark: #2f2f2f;
+  --color-dark: #600568;
   --color-light: #fff;
   --color-brand: #57bd84;
   --font-fam: "Lato", sans-serif;
@@ -175,19 +175,19 @@ body {
   background-color: #17b8ce;
 }
 
-.wrap {
+/* .wrap {
   display: flex;
   justify-content: center;
   text-align: center;
   margin-top: -150px;
   margin-bottom: 50px;
-}
+} */
 
 /*Resize the wrap to see the search bar change!*/
-/* .wrap {
+.wrap {
   width: 30%;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-} */
+}

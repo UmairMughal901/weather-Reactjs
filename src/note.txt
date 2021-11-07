@@ -1,3 +1,5 @@
 8ea3800ca0044a040f1ba2614f3d22d8
 
 api.openweathermap.org/data/2.5/weather?q=Lahore&appid=8ea3800ca0044a040f1ba2614f3d22d8
+
+https://api.openweathermap.org/data/2.5/weather?q=Lahore&appid=8ea3800ca0044a040f1ba2614f3d22d8
