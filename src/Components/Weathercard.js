@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-const Weathercard = ({tempInfo}) => {
-    //Destructing of Data
-    const {temp,
+const Weathercard = ({ tempInfo }) => {
+  const [weatherIcon, setweatherIcon] = useState("");
+
+  
+
+  //Destructing of Data
+  const {
+    temp,
     pressure,
     humidity,
     weatherMode,
@@ -10,18 +15,54 @@ const Weathercard = ({tempInfo}) => {
     speed,
     country,
     sunset,
-  } = tempInfo ;
+  } = tempInfo;
+
+
+  //useEffect hook
+  useEffect(() => {
+    if (weatherMode) {
+      switch (weatherMode) {
+        case "Sunny":
+          setweatherIcon("wi-day-sunny");
+          break;
+
+        case "Fog":
+          setweatherIcon("wi-day-fog");
+          break;
+
+        case "Smoke":
+          setweatherIcon("wi-smoke");
+          break;
+
+          case "Clouds":
+          setweatherIcon("wi-cloudy");
+          break;
+
+          case "Haze":
+            setweatherIcon("wi-day-haze");
+            break;
+
+            case "Rain":
+            setweatherIcon("wi-day-rain");
+            break;
+
+        default:
+          setweatherIcon("wi-day-sunny");
+          break;
+      }
+    }
+  }, [weatherMode]);
 
   //convert sunset value into time
   let sec = sunset;
-  let date = new Date(sec *1000); //we need milisecs
-  let timeStr = `${date.getHours()}`;
-    
+  let date = new Date(sec * 1000); //we need milisecs
+  let timeStr = `${date.getHours()}:${date.getMinutes()}`;
+
   return (
     <>
       <article className="widget">
         <div className="weatherIcon">
-          <i className={"wi wi-day-sunny"}></i>
+          <i className={`wi ${weatherIcon}`}></i>
         </div>
         <div className="weatherInfo">
           <div className="temperature">
@@ -29,7 +70,9 @@ const Weathercard = ({tempInfo}) => {
           </div>
           <div className="description">
             <div className="weatherCondition">{weatherMode}</div>
-            <div className="place">{cityName}, {country}</div>
+            <div className="place">
+              {cityName}, {country}
+            </div>
           </div>
         </div>
         <div className="date">{new Date().toLocaleString()}</div>
@@ -42,7 +85,7 @@ const Weathercard = ({tempInfo}) => {
                 <i className={"wi wi-sunset"}></i>
               </p>
               <p className="extra-info-leftside">
-              {timeStr}
+                {timeStr}
                 <br />
                 Sunset
               </p>
@@ -64,7 +107,7 @@ const Weathercard = ({tempInfo}) => {
                 <i className={"wi wi-direction-down"}></i>
               </p>
               <p className="extra-info-leftside">
-               {pressure}
+                {pressure}
                 <br />
                 Pressure
               </p>
